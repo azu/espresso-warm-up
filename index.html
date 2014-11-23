@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Espresso.js example app</title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+<div class="commentBox">
+    <h1>Comments</h1>
+
+    <div data-ref="commentList">
+        <div data-ref="comment">
+            <a href="#" data-ref="remove">[x]</a>
+
+            <h2 data-ref="author"></h2>
+            <span data-ref="html"></span>
+        </div>
+    </div>
+    <form name="commentForm" data-ref="commentForm">
+        <p class="err"></p>
+        <input type="text" data-ref="author" placeholder="Your name"/>
+        <input type="text" data-ref="text" placeholder="Say something..."/>
+        <input type="submit" value="Add"/>
+    </form>
+</div>
+
+<script src="dist/espresso.min.js"></script>
+<script src="dist/showdown.js"></script>
+<script src="dist/bundle.js"></script>
+
+</body>
+
+</html>
